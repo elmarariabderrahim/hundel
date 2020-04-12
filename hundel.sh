@@ -1,7 +1,7 @@
 
 
 #!/bin/bash
-JOB_NAME=$1
+ export JOB_NAME=$1
 path=$(pwd)
 # WORKSPACE=$2
 # VERSION_NUMBER=$3
