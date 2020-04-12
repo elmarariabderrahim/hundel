@@ -1,4 +1,4 @@
-
+def jobName = env.JOB_NAME
 pipeline {
     agent any 
 	 environment {
@@ -7,9 +7,9 @@ pipeline {
     stages {
         stage('generate_DDL') {
             steps {
-				    
-        	     bat 'sh -c ./hundel.sh  $JOB_NAME $WORKSPACE 4'
-		   	echo "$JOB_NAME"
+			echo "jobName"	    
+        	     bat 'sh -c ./hundel.sh  jobName $WORKSPACE 4'
+		   	
 		    
             }
         }
