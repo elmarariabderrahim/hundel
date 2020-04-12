@@ -10,7 +10,7 @@ pipeline {
             steps {
 			echo "$jobName"
 		    	echo "$w"
-		    bat 'sh -c  ./hundel.sh `"${jobName}"`'
+		    bat 'sh -c  ./hundel.sh `"$jobName"`'
 		   	
 		    
             }
