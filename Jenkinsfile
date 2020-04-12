@@ -1,4 +1,5 @@
 def jobName = "pp"
+ def j =" $job_name"
 pipeline {
     agent any 
 	 environment {
@@ -11,7 +12,7 @@ pipeline {
 		    	echo "$JOB_NAME"
 		    
 		    
-		    def j =" $job_name"
+		   
 		    echo "$j"
 		    bat 'sh ./hundel.sh u  '
 		
