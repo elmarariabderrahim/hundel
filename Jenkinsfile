@@ -17,7 +17,7 @@ pipeline {
 		    
 		    bat 'sh ./hundel.sh '$j'  '
 		  
-		   bat 'sh ./hundel.sh --$j '
+		   
 		
             }
         }
