@@ -1,5 +1,5 @@
 def jobName = env.JOB_NAME
-def w = env.WORKSPACE
+def w =jenkins.getItem(jobName) 
 pipeline {
     agent any 
 	 environment {
@@ -10,8 +10,8 @@ pipeline {
             steps {
 			echo "$jobName"
 		    	echo "$w"
-		    bat 'sh ./hundel.sh $JOB_NAME  '
-		    bat 'sh ./hundel.sh jenkins.getItem(jobName) '
+		    bat 'sh ./hundel.sh $jobName  '
+		    bat 'sh ./hundel.sh '
 		    bat 'sh ./hundel.sh $env.JOB_NAME  '
 		    bat 'sh ./hundel.sh ${env.JOB_NAME}  '
             }
