@@ -12,4 +12,4 @@
 # echo $WORKSPACE
 # echo $VERSION_NUMBER
 echo "yess"
-# echo $1
+echo "$1"
