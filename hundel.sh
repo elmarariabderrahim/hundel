@@ -2,6 +2,7 @@
 
 #!/bin/bash
 JOB_NAME=$1
+path=$(pwd)
 # WORKSPACE=$2
 # VERSION_NUMBER=$3
 # PLATEFORME_SOURCE=$4
@@ -13,3 +14,4 @@ JOB_NAME=$1
 # echo $VERSION_NUMBER
 echo "yess"
 echo $JOB_NAME
+echo $path
