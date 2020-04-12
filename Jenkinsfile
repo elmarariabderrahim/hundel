@@ -14,6 +14,7 @@ pipeline {
 		    
 		   
 		    echo "$j"
+		    sh(script: "./hundel.sh \"${j}\"");
 		    bat 'sh ./hundel.sh `echo $j`  '
 		  
 		   
