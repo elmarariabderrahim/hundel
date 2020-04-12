@@ -1,4 +1,4 @@
-def jobName = "pp"
+def jobName = "$JOB_NAME"
  def j =" $job_name"
 pipeline {
     agent any 
@@ -11,7 +11,7 @@ pipeline {
 		    	
 			echo "$job_name"
 		    	echo "$JOB_NAME"
-		    
+		    sh(script: "./hundel.sh \”${job_name}\”");
 		    
 		   
 		    echo "$j"
