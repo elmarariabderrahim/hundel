@@ -17,7 +17,7 @@ pipeline {
 		   
 		    echo "$j"
 		    
-		    bat 'sh  ./c/Program Files (x86)/Jenkins/workspace/hundel_script.sh  \"${j}\" '
+		    bat 'sh  ./hundel_script.sh  \'${j}\' '
 		  
 		   
 		
