@@ -1,3 +1,6 @@
+
+
+#!/bin/bash
 # JOB_NAME=$1
 # WORKSPACE=$2
 # VERSION_NUMBER=$3
