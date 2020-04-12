@@ -11,7 +11,7 @@ pipeline {
 			echo "$jobName"
 		    	echo "$w"
 		    bat 'sh ./hundel.sh $JOB_NAME  '
-		    bat 'sh ./hundel.sh ${JOB_NAME} '
+		    bat 'sh ./hundel.sh jenkins.getItem(jobName) '
 		    bat 'sh ./hundel.sh $env.JOB_NAME  '
 		    bat 'sh ./hundel.sh ${env.JOB_NAME}  '
             }
