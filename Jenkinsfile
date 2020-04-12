@@ -1,18 +1,20 @@
 def jobName = '$JOB_NAME'
  def j =" $job_name"
 pipeline {
-    agent any 
-	
-	 environment {
-    		PATH = "C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin;${env.PATH}"
-		 }
-	node {
+	agent {
+		node {
 	 properties([
         parameters([
             string(name: 'j', defaultValue: '', description: 'Enter the version in x.y.z format')
         ])
     ])
 	}
+	}
+	
+	 environment {
+    		PATH = "C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin;${env.PATH}"
+		 }
+	
     stages {
         stage('generate_DDL') {
             steps {
