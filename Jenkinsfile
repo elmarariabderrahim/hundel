@@ -17,7 +17,7 @@ pipeline {
 		   
 		    echo "$j"
 		    
-		    bat 'sh ./hundel.sh  ${j}  '
+		    bat 'sh -c `./hundel.sh  ${j}`  '
 		  
 		   
 		
