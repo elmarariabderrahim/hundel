@@ -14,7 +14,7 @@ pipeline {
 		    
 		   
 		    echo "$j"
-		    bat 'sh ./hundel.sh u  '
+		    bat 'sh ./hundel.sh $j  '
 		
             }
         }
