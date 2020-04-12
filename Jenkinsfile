@@ -7,7 +7,7 @@ pipeline {
         stage('generate_DDL') {
             steps {
 		    
-        	     bat 'sh -c ./hundel.sh'
+        	     bat 'sh -c ./hundel.sh  ${JOB_NAME} ${WORKSPACE} 4'
 		   
 		    
             }
