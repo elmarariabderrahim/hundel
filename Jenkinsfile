@@ -1,4 +1,4 @@
-def jobName =  ${JOB_NAME}
+def jobName = env.JOB_NAME
 def w = env.WORKSPACE
 pipeline {
     agent any 
