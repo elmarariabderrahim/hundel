@@ -13,11 +13,11 @@ pipeline {
 		    	
 			echo "$job_name"
 		    	echo "$JOB_NAME"
-		    
+		  
 		   
 		    echo "$j"
 		    
-		    bat 'sh -c ./hundel.sh  ${j}  '
+		    bat 'sh  ./hundel.sh  \"${j}\" '
 		  
 		   
 		
