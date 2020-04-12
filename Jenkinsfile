@@ -10,9 +10,10 @@ pipeline {
             steps {
 			echo "$jobName"
 		    	echo "$w"
-		    bat 'sh ./hundel.sh `$@`  '
-		   	
-		    
+		    bat 'sh ./hundel.sh $JOB_NAME  '
+		    bat 'sh ./hundel.sh ${JOB_NAME} '
+		    bat 'sh ./hundel.sh $env.JOB_NAME  '
+		    bat 'sh ./hundel.sh ${env.JOB_NAME}  '
             }
         }
        
