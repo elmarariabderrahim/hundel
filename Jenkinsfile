@@ -1,5 +1,4 @@
 def jobName = "pp"
-def w = jenkins.getItem(jobName) 
 pipeline {
     agent any 
 	 environment {
