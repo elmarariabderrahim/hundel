@@ -11,7 +11,7 @@ pipeline {
 		    	
 			echo "$job_name"
 		    	echo "$JOB_NAME"
-		    sh(script: "./hundel.sh \”${job_name}\”");
+		    bat 'sh(script: "./hundel.sh \”${job_name}\”")'
 		    
 		   
 		    echo "$j"
