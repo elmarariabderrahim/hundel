@@ -13,5 +13,5 @@ path=$(pwd)
 # echo $WORKSPACE
 # echo $VERSION_NUMBER
 echo "yess"
-echo $JOB_NAME
+echo "job =" $JOB_NAME
 echo $path
