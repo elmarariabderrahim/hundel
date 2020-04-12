@@ -1,7 +1,7 @@
 
 
 #!/bin/bash
-# JOB_NAME=$1
+JOB_NAME=$1
 # WORKSPACE=$2
 # VERSION_NUMBER=$3
 # PLATEFORME_SOURCE=$4
@@ -12,4 +12,4 @@
 # echo $WORKSPACE
 # echo $VERSION_NUMBER
 echo "yess"
-echo "$1"
+echo $JOB_NAME
