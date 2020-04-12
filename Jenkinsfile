@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('generate_DDL') {
             steps {
+		    	
 			echo "$job_name"
 		    	echo "$JOB_NAME"
 		    
