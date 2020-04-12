@@ -11,5 +11,5 @@
 # echo $JOB_NAME
 # echo $WORKSPACE
 # echo $VERSION_NUMBER
-
-echo $1
+echo "yess"
+# echo $1
