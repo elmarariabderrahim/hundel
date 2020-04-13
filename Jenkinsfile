@@ -10,15 +10,22 @@ pipeline {
     stages {
         stage('generate_DDL') {
             steps {
-		    	
+		    	withCredentials([
+					usernamePassword(
+						credentialsId: '0467c09c-9a30-4e9f-bdc9-6126fd2482d4', 
+						usernameVariable: 'USERNAME',
+						passwordVariable: 'PASSWORD'
+					)
+				])
+
 			echo "$job_name"
 		    	echo "$JOB_NAME"
 		  
 		   
 		    echo "$j"
 		    
-		    bat "sh  ./hundel.sh  \"${j}\" "
-		  
+		    bat "sh  ./hundel.sh  \"${USERNAME}\"  \"${PASSWORD}\" "
+		  			
 		   
 		
             }
