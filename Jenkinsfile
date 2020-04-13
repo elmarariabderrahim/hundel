@@ -28,7 +28,7 @@ pipeline {
 		    echo "$j"
 		    
 		    //bat "sh  ./hundel.sh  \"${USERNAME}\"  \"${PASSWORD}\" "
-		  	 bat 'sh  -c ./hundel.sh  ${USERNAME}  ${PASSWORD} '		
+		  	 bat 'sh   ./hundel.sh  ${USERNAME}  ${PASSWORD} '		
 			}
 		
             }
