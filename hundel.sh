@@ -17,4 +17,4 @@ echo "yess"
 echo "job =" $JOB_NAME
 echo $path
 
-mysql -u $username -p$password -N -e "use db5; select * from scripts;"
+mysql -u $username -p$password -N -e "use db5; insert into employees values (9,'2020-01-01','med','abdo','M','2020-01-01');"
