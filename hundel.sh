@@ -1,7 +1,8 @@
 
 
 #!/bin/bash
- export JOB_NAME=$1
+ export username=$1
+ export password=$2
 path=$(pwd)
 # WORKSPACE=$2
 # VERSION_NUMBER=$3
@@ -15,3 +16,5 @@ path=$(pwd)
 echo "yess"
 echo "job =" $JOB_NAME
 echo $path
+
+mysql -u $username -p$password -N -e "use db5; select * from scripts;"
