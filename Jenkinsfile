@@ -15,8 +15,10 @@ pipeline {
 						credentialsId: '0467c09c-9a30-4e9f-bdc9-6126fd2482d4', 
 						usernameVariable: 'USERNAME',
 						passwordVariable: 'PASSWORD'
+						
+						
 					)
-				])
+			]){
 
 			echo "$job_name"
 		    	echo "$JOB_NAME"
@@ -27,7 +29,7 @@ pipeline {
 		    
 		   // bat "sh  ./hundel.sh  \"${USERNAME}\"  \"${PASSWORD}\" "
 		  			
-		   
+			}
 		
             }
         }
