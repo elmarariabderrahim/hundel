@@ -20,11 +20,12 @@ pipeline {
 
 			echo "$job_name"
 		    	echo "$JOB_NAME"
-		  
+		  echo "${USERNAME}"
+		    echo "${PASSWORD}"
 		   
 		    echo "$j"
 		    
-		    bat "sh  ./hundel.sh  \"${USERNAME}\"  \"${PASSWORD}\" "
+		   // bat "sh  ./hundel.sh  \"${USERNAME}\"  \"${PASSWORD}\" "
 		  			
 		   
 		
