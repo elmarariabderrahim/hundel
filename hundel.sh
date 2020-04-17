@@ -40,9 +40,9 @@ JOB_NAME=$1
 # 	fi
 #   	echo -e "${RESULT}"
 # }
-for inode in `ls -1 $1`
+for inode in `ls -1 sql_scripts`
 	do
-  DB_NAME_IN_SCRIPT_UPPERCASE=`Read_DB_Name $1/$inode 1`
-	DB_NAME_IN_SCRIPT_LOWERCASE=`Read_DB_Name $1/$inode 2`
+  DB_NAME_IN_SCRIPT_UPPERCASE=`Read_DB_Name $inode 1`
+	DB_NAME_IN_SCRIPT_LOWERCASE=`Read_DB_Name $inode 2`
 done
 
