@@ -1,5 +1,5 @@
 def jobName = '$JOB_NAME'
- def workspace = pwd()
+// def workspace = pwd()
 pipeline {
 	agent any
 	
