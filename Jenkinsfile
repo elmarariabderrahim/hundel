@@ -13,7 +13,7 @@ pipeline {
 
 			bat "sh  ./hundel.sh
 		    
-		   // bat "sh  ./hundel.sh  \"${jobName}\"  "
+		   // bat "sh -c  ./hundel.sh  \"${jobName}\"  "
 		  	// bat "sh -c  ./hundel.sh  ${jobName}  "		
 			
 		
