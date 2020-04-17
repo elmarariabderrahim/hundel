@@ -1,12 +1,12 @@
 #!/bin/bash
 
 
-# JOB_NAME=$1
-# WORKSPACE=$2
-# VERSION_NUMBER=$3
-# PLATEFORME_SOURCE=$4
-# VERSION_NAME="V$3"
-# PLATEFORME=`echo $JOB_NAME |cut -d"_" -f1`
+JOB_NAME=$1
+WORKSPACE=$2
+VERSION_NUMBER=$3
+PLATEFORME_SOURCE=$4
+VERSION_NAME="V$3"
+PLATEFORME=`echo $JOB_NAME |cut -d"_" -f1`
 # #BRANCHE=`echo $JOB_NAME |cut -d"_" -f2`
 # # lecture des parametres / variables environnements
 # SCRIPT_NAME=`basename "$0"`
