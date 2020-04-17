@@ -1,5 +1,5 @@
 def jobName = '$JOB_NAME'
- def j =" ${WORKSPACE}"
+ def workspace = pwd()
 pipeline {
 	agent any
 	
@@ -15,7 +15,7 @@ pipeline {
 			echo "$job_name"
 			echo "$j"
 		    
-		    //bat "sh  ./hundel.sh  \"${USERNAME}\"  \"${PASSWORD}\" "
+		    bat "sh  ./hundel.sh  \"${jobName}\"  \"${workspace}\" "
 		  	// bat "sh -c  ./hundel.sh  ${USERNAME}  ${PASSWORD} "		
 			
 		
