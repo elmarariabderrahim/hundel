@@ -11,7 +11,7 @@ pipeline {
             steps {
 		    	
 
-			bat "sh -c  ./hundel.sh
+			bat 'sh -c  ./hundel.sh'
 		    
 				
 			
