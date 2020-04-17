@@ -11,9 +11,10 @@ pipeline {
             steps {
 		    	
 
-			bat 'sh -c  ./hundel.sh'
+			bat 'sh -c  ./hundel.sh ${jobName}'
 		    
-				
+				   // bat "sh -c  ./hundel.sh  \"${jobName}\"  "
+		  	//bat "sh -c  ./hundel.sh  ${jobName}  "
 			
 		
             }
