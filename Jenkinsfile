@@ -1,4 +1,4 @@
-def jobName= ${JOBNAME}
+def jobName= '${JOBNAME}'
 pipeline {
 	agent any
 	
