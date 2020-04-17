@@ -1,6 +1,6 @@
 #!/bin/bash
-
+j=$1
 path=$(pwd)
 echo $path
-echo $1
+echo $j
 
