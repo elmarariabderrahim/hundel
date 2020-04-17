@@ -40,8 +40,8 @@ Read_DB_Name() {
 	fi
   	echo -e "${RESULT}"
 }
-for inode in `ls -1 sql_scripts`
-	do
+for inode in sql_scripts/*; do
+	
   DB_NAME_IN_SCRIPT_UPPERCASE=`Read_DB_Name $inode 1`
 	DB_NAME_IN_SCRIPT_LOWERCASE=`Read_DB_Name $inode 2`
 done
