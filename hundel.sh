@@ -3,6 +3,7 @@
 #!/bin/bash
 
 JOB_NAME=$1
+echo $JOB_NAME
 WORKSPACE=$(pwd)
 VERSION_NUMBER=$3
 PLATEFORME_SOURCE=$4
