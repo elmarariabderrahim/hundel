@@ -46,8 +46,9 @@ Handle_Directory_Script() {
 SCRIPT_NOT_HANDLED_LIST=()
 for inode in sql_scripts/*; do
 	GREP_INODE_REGISTER_FILE=`grep "$inode" $REGISTER_FILE | tail -1` 
-  DB_NAME_IN_SCRIPT_UPPERCASE=`Read_DB_Name $inode 1`
-	DB_NAME_IN_SCRIPT_LOWERCASE=`Read_DB_Name $inode 2`
+	CHECKSUM_FOUND_IN_REGISTER_FILE=`echo $GREP_INODE_REGISTER_FILE | cut -d"|" -f2`
+	CHECKSUM_VALUE=`md5sum $inode | awk '{print $1}'`
+	echo "New checksum $CHECKSUM_VALUE ; Existant checksum $CHECKSUM_FOUND_IN_REGISTER_FILE"
 done
 
 
