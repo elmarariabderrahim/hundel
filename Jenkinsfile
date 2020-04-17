@@ -15,7 +15,7 @@ pipeline {
 			echo "$job_name"
 			echo "$j"
 		    
-		    bat "sh  ./hundel.sh  \"${jobName}\"  \"${workspace}\" "
+		    //bat "sh  ./hundel.sh  \"${jobName}\"  \"${workspace}\" "
 		  	// bat "sh -c  ./hundel.sh  ${USERNAME}  ${PASSWORD} "		
 			
 		
