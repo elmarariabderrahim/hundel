@@ -1,4 +1,4 @@
-def jobName= '${JOBNAME}'
+def jobName= "${JOBNAME}"
 pipeline {
 	agent any
 	
@@ -10,7 +10,7 @@ pipeline {
         stage('generate_DDL') {
             steps {
 		    	
-			echo '$jobName'
+			echo $jobName
 		    bat 'sh -c  ./hundel.sh ${jobName}'
 		    
 				  // bat "sh -c  ./hundel.sh  \"${jobName}\"  "
