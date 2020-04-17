@@ -40,11 +40,18 @@ Read_DB_Name() {
 	fi
   	echo -e "${RESULT}"
 }
+
+
+Handle_Directory_Script() {
+SCRIPT_NOT_HANDLED_LIST=()
 for inode in sql_scripts/*; do
-	
+	GREP_INODE_REGISTER_FILE=`grep "$inode" $REGISTER_FILE | tail -1` 
   DB_NAME_IN_SCRIPT_UPPERCASE=`Read_DB_Name $inode 1`
 	DB_NAME_IN_SCRIPT_LOWERCASE=`Read_DB_Name $inode 2`
 done
+
+
+}
 echo $DB_NAME_IN_SCRIPT_LOWERCASE
 echo $DB_NAME_IN_SCRIPT_UPPERCASE
 
