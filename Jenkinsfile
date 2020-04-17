@@ -1,4 +1,4 @@
-
+def jobName= ${JOBNAME}
 pipeline {
 	agent any
 	
@@ -11,7 +11,7 @@ pipeline {
             steps {
 		    	
 
-			bat 'sh -c  ./hundel.sh ${jobName}'
+			bat 'sh -c  ./hundel.sh $jobName'
 		    
 				   // bat "sh -c  ./hundel.sh  \"${jobName}\"  "
 		  	//bat "sh -c  ./hundel.sh  ${jobName}  "
