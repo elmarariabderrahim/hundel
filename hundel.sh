@@ -46,6 +46,6 @@ Read_DB_Name() {
 
 for f in sql_scripts/*; do
   script_name=$(echo $f| cut -d'/' -f 2)
-  DB_NAME_IN_SCRIPT_UPPERCASE=`Read_DB_Name $f `
+  DB_NAME_IN_SCRIPT_UPPERCASE=`Read_DB_Name $f 1 `
   echo $DB_NAME_IN_SCRIPT_UPPERCASE
 done
