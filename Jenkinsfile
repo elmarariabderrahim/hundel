@@ -1,5 +1,5 @@
 def jobName = '$JOB_NAME'
- def j =" $job_name"
+ def j =" ${WORKSPACE}"
 pipeline {
 	agent any
 	
@@ -10,25 +10,13 @@ pipeline {
     stages {
         stage('generate_DDL') {
             steps {
-		    	withCredentials([
-					usernamePassword(
-						credentialsId: '0467c09c-9a30-4e9f-bdc9-6126fd2482d4', 
-						usernameVariable: 'USERNAME',
-						passwordVariable: 'PASSWORD'
-						
-						
-					)
-			]){
+		    	
 
 			echo "$job_name"
-		    	echo "$JOB_NAME"
-		  echo "${USERNAME}"
-		    echo "${PASSWORD}"
-		   
-		    echo "$j"
+			echo "$j"
 		    
 		    //bat "sh  ./hundel.sh  \"${USERNAME}\"  \"${PASSWORD}\" "
-		  	 bat "sh -c  ./hundel.sh  ${USERNAME}  ${PASSWORD} "		
+		  	// bat "sh -c  ./hundel.sh  ${USERNAME}  ${PASSWORD} "		
 			}
 		
             }
