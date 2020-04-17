@@ -45,4 +45,6 @@ for inode in `ls -1 sql_scripts`
   DB_NAME_IN_SCRIPT_UPPERCASE=`Read_DB_Name $inode 1`
 	DB_NAME_IN_SCRIPT_LOWERCASE=`Read_DB_Name $inode 2`
 done
+echo $DB_NAME_IN_SCRIPT_LOWERCASE
+echo $DB_NAME_IN_SCRIPT_UPPERCASE
 
