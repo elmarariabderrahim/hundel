@@ -17,7 +17,7 @@ pipeline {
 		    
 		    //bat "sh  ./hundel.sh  \"${USERNAME}\"  \"${PASSWORD}\" "
 		  	// bat "sh -c  ./hundel.sh  ${USERNAME}  ${PASSWORD} "		
-			}
+			
 		
             }
         }
