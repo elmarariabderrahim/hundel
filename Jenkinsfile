@@ -1,4 +1,3 @@
-def jobName = '$JOB_NAME'
 
 pipeline {
 	agent any
