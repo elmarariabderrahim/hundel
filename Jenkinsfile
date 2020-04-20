@@ -16,7 +16,7 @@ pipeline {
             steps {
         script{
                     if(CHOIX == 'dump')
-                        bat "sh  ./hundel.sh.sh root pixid123"
+                        bat "sh  ./hundel.sh root pixid123"
                     else
                         bat "sh  ./exp_script.sh"
                 }
