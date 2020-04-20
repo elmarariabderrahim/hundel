@@ -18,7 +18,7 @@ pipeline {
 	    steps {
 	
 		    script{
-			    echo env 
+			    echo $env 
 	   
 	    
 	    }
