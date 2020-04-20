@@ -1,4 +1,4 @@
-
+def c=${params.CHOICE}
 pipeline {
   agent any
 	
@@ -17,12 +17,8 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-		     echo "Choice: ${params.CHOICE}"  
-		    if (${params.CHOICE} == '1'){
-		 echo "Choice: ${params.CHOICE}"
-		    }else {
-			    echo "walo"
-		    }
+		     echo "Choice: $c"  
+		    
 		
 	    }
 	    }
