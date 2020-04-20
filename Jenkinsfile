@@ -12,6 +12,7 @@ pipeline {
 		    	
 			echo "$jobName"
 		    //bat 'sh -c  ./hundel.sh ${jobName}'
+		    echo "${GIT_PROJECT_NAME}"
 		    
 				   bat "sh   ./hundel.sh  \"${jobName}\"  "
 		  	//bat "sh -c  ./hundel.sh  ${jobName}  "
