@@ -25,7 +25,7 @@ pipeline {
 			]){
         script{
                     if(CHOIX == 'dump')
-                        bat "sh  ./hundel.sh root pixid123"
+                        bat "sh  ./hundel.sh ${USERNAME}  ${PASSWORD}"
                     else
                         bat "sh  ./exp_script.sh"
                 }
