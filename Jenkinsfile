@@ -18,10 +18,8 @@ pipeline {
     stage('Environment') {
 	    steps {
 		  
-		echo "Choice: ${params.CHOICE}"
-		    if ({params.CHOICE} == '1'){
-			    echo "12"
-		    }
+		echo "Choice: $CHOICE"
+		    
 		    
 		
 	    }
