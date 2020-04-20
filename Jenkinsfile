@@ -18,6 +18,7 @@ pipeline {
     stage('Environment') {
 	    steps {
 		    echo "Choice: $params.CHOIX"
+		    c= $params.CHOIX
 		    echo "$c"
 		    
 		
