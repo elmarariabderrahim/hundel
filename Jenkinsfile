@@ -17,7 +17,12 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-		     echo "Choice: ${params.CHOICE}"
+		     echo "Choice: ${params.CHOICE}"  
+		    if (${params.CHOICE} == '1'){
+		 echo "Choice: ${params.CHOICE}"
+		    }else {
+			    echo "walo"
+		    }
 		
 	    }
 	    }
