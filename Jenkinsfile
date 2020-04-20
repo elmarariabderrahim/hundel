@@ -8,17 +8,17 @@ pipeline {
 		 }
     parameters {
         choice(name: 'CHOIX',
-	       choices: ['1', '2'],
+	       choices: ['dump', 'ddl'],
 	       description: '1 : Exportation complete de la DB\n2 : Choix des composants necessaires')
   }
   stages {
     stage('Example') {
             steps {
         script{
-                    if(CHOIX == '1')
-                        echo 'yeah'
+                    if(CHOIX == 'dump')
+                        bat "sh  ./hundel.sh.sh root pixid123"
                     else
-                        echo 'no'
+                        bat "sh  ./exp_script.sh"
                 }
       }
     }
