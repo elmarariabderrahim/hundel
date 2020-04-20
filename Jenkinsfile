@@ -17,7 +17,7 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-		    if ( ${params.CHOICE} = "dump"){
+		    if ( ${params.CHOICE}.equals(dump)){
 		 echo "Choice: ${params.CHOICE}"
 		    }else {
 			    echo "walo"
