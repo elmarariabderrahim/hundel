@@ -17,7 +17,7 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-		    echo "Choice: ${envvv}"
+		    echo "Choice: $choice"
 		    echo "$c"
 		    
 		
