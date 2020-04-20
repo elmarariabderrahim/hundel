@@ -1,4 +1,4 @@
-def c=parms.choice
+def c 
 pipeline {
   agent any
 	
@@ -17,7 +17,8 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-		     echo "Choice: $c"  
+		    $c = ${parms.CHOICE}
+		    echo $c
 		    
 		
 	    }
