@@ -13,14 +13,12 @@ pipeline {
       description: 'Passing the Environment'
     )
   }
-	def c =${params.CHOICE}
   stages {
 	  
     stage('Environment') {
 	    steps {
-		    echo ${c}
-	   
-	    
+		     echo "Choice: ${params.CHOICE}"
+		
 	    }
 	    }
   }
