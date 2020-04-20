@@ -17,7 +17,8 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-		    c = ${parms.CHOICE}
+		    echo ${parms.CHOICE}
+		   
 		    echo $c
 		    
 		
