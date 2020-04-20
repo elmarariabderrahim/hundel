@@ -1,4 +1,4 @@
-def c 
+def c =""
 pipeline {
   agent any
 	
