@@ -19,7 +19,7 @@ pipeline {
 	    steps {
 		  
 		echo "Choice: ${params.CHOICE}"
-		    if ('1'== '1'){
+		    if ({params.CHOICE} == '1'){
 			    echo "12"
 		    }
 		    
