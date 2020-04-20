@@ -8,7 +8,7 @@ pipeline {
 		 }
 	parameters {
     choice(
-      name: 'Env',
+      name: 'CHOICE',
       choices: ['dump', 'ddl'],
       description: 'Passing the Environment'
     )
@@ -18,15 +18,11 @@ pipeline {
     stage('Environment') {
 	    steps {
 	
-		    script{
-			if(Env = 'dump')
-                        echo 'dump'
-                    else
-                        echo 'ddl 2'
-                }
+		 echo "Choice: ${params.CHOICE}"
 	   
 	    
 	    }
 	    }
+  }
   
 }
