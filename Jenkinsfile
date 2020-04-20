@@ -17,8 +17,10 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-	
+		    if (${params.CHOICE} = 'dump'){
 		 echo "Choice: ${params.CHOICE}"
+		    }else {
+			    echo "walo"
 	   
 	    
 	    }
