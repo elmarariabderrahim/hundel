@@ -19,7 +19,7 @@ pipeline {
 	    steps {
 		  
 		echo "Choice: $CHOICE"
-		    if ($CHOICE == '1'){
+		    if ($CHOICE = '1'){
 			    echo "12"
 		    }
 		    
