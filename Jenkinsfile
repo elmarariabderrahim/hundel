@@ -17,10 +17,9 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-		    
-		    if (${params.CHOICE}.equals("1")) {
-		    	echo "1"
-		    }
+		  c= ' sh echo Choice: ${params.CHOICE}'
+		
+		    echo $c
 		
 	    }
 	    }
