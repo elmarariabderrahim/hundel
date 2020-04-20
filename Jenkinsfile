@@ -37,7 +37,7 @@ pipeline {
 	
 		    script{
 	    if ( ${params.Env} == 'dump' ) {
-	    	bat "sh hundel.sh  root pixid123
+	    	bat "sh hundel.sh  root pixid123"
 	    }else {
 	    	bat 'sh -c ./exp_script.sh '
 	    }
