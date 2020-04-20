@@ -21,6 +21,7 @@ pipeline {
 		 echo "Choice: ${params.CHOICE}"
 		    }else {
 			    echo "walo"
+		    }
 	   
 	    
 	    }
