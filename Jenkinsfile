@@ -18,7 +18,7 @@ pipeline {
     stage('Environment') {
 	    steps {
 		    echo "Choice: $params.CHOIX"
-		    if (CHOIX == '1')
+		    if ($params.CHOIX == '1')
 		    {
 		    	echo "yes"
 		    }else {
