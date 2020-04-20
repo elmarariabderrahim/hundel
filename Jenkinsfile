@@ -18,7 +18,7 @@ pipeline {
 	    steps {
 	
 		    script{
-			    echo ${params.Env}
+			    echo env 
 	   
 	    
 	    }
