@@ -17,11 +17,9 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-		  
+		  c=$CHOICE
 		echo "Choice: $CHOICE"
-		    if ("$CHOICE" == '1'){
-			    echo "12"
-		    }
+		    echo "$c"
 		    
 		
 	    }
