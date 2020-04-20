@@ -17,7 +17,7 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-		  c=$CHOICE
+		    c=${CHOICE}
 		echo "Choice: $CHOICE"
 		    echo "$c"
 		    
