@@ -9,7 +9,7 @@ pipeline {
 	parameters {
     choice(
       name: 'CHOICE',
-      choices: ['dump', 'ddl'],
+      choices: ['1', '2'],
       description: 'Passing the Environment'
     )
   }
@@ -17,7 +17,7 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-		    if ( ${params.CHOICE}.equals(dump)){
+		    if ( ${params.CHOICE} = 1){
 		 echo "Choice: ${params.CHOICE}"
 		    }else {
 			    echo "walo"
