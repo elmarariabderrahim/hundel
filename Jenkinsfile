@@ -8,7 +8,7 @@ pipeline {
 		 }
 	parameters {
     choice(
-      name: 'env',
+      name: 'envvv',
       choices: ['1', '2'],
       description: 'Passing the Environment'
     )
@@ -17,7 +17,7 @@ pipeline {
 	  
     stage('Environment') {
 	    steps {
-		    echo "Choice: ${env}"
+		    echo "Choice: ${envvv}"
 		    echo "$c"
 		    
 		
