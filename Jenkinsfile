@@ -14,6 +14,7 @@ pipeline {
   }
   stages {
     stage('Environment') {
+	    steps {
 	    withCredentials([
 					usernamePassword(
 						credentialsId: '0467c09c-9a30-4e9f-bdc9-6126fd2482d4', 
@@ -27,6 +28,7 @@ pipeline {
 	    	bat "sh hundel.sh ${USERNAME}  ${PASSWORD}"
 	    }else {
 	    	bat 'sh -c ./exp_script.sh '
+	    }
 	    }
 	    }
     }
