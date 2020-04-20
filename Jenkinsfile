@@ -1,4 +1,4 @@
-def c=${params.CHOICE}
+def c=parms.choice
 pipeline {
   agent any
 	
