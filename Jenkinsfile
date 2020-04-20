@@ -19,7 +19,7 @@ pipeline {
 	    steps {
 		  c= ' sh echo Choice: ${params.CHOICE}'
 		
-		    echo $c
+		    echo "$c"
 		
 	    }
 	    }
