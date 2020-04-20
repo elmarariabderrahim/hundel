@@ -15,16 +15,14 @@ pipeline {
   stages {
     stage('Environment') {
 	    steps {
-		    script{
+		    
 	    withCredentials([
 					usernamePassword(
 						credentialsId: '0467c09c-9a30-4e9f-bdc9-6126fd2482d4', 
 						usernameVariable: 'USERNAME',
-						passwordVariable: 'PASSWORD'
-						
-						
-					)
-			]){
+						passwordVariable: 'PASSWORD')	
+			   ]){
+		    script{
 	    if ( ${params.Env} == 'dump' ) {
 	    	bat "sh hundel.sh ${USERNAME}  ${PASSWORD}"
 	    }else {
