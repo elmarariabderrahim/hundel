@@ -19,7 +19,11 @@ pipeline {
 	    steps {
 	
 		    script{
-			    echo $params.Env 
+			if(Env = 'dump')
+                        echo 'dump'
+                    else
+                        echo 'ddl 2'
+                }
 	   
 	    
 	    }
