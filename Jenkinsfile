@@ -34,20 +34,14 @@ pipeline {
         }  
     stage('Environment') {
 	    steps {
-		    
-	    withCredentials([
-					usernamePassword(
-						credentialsId: '0467c09c-9a30-4e9f-bdc9-6126fd2482d4', 
-						usernameVariable: 'USERNAME',
-						passwordVariable: 'PASSWORD')	
-			   ]){
+	
 		    script{
 	    if ( ${params.Env} == 'dump' ) {
-	    	bat "sh hundel.sh ${USERNAME}  ${PASSWORD}"
+	    	bat "sh hundel.sh  root pixid123
 	    }else {
 	    	bat 'sh -c ./exp_script.sh '
 	    }
-	    }
+	    
 	    }
 	    }
     }
